@@ -1,32 +1,23 @@
-/*9- Crea un script que escriba los números del 1 al 500,
-que indique cuáles son múltiplos de 4 y de 9 y 
-que cada 5 líneas muestre una línea horizontal. 
-Por ejemplo :
+/*7- Haz un script que escriba una pirámide inversa 
+de los números del 1 al número que indique el usuario
+(no mayor de 50)  de la siguiente forma : (suponiendo que indica 30).
 
+303030303030303030303030303030303030303030303030303030303030
+2929292929292929292929292929292929292929292929292929292929
+28282828282828282828282828282828282828282828282828282828
+…..
+333
+22
 1
-2
-3
-4 (Múltiplo de 4)
-5-
-————————————————————-
-
-6
-7
-8 (Múltiplo de 4)
-9 (Múltiplo de 9)
-10
 */
-for (let index = 1; index <501; index++) {
-    document.write(index);
-    if (index%4==0) {
-        document.write(" (Múltiplo de 4) ")        
-    }
-    if (index%9==0) {
-        document.write(" (Múltiplo de 9) ")        
-    }
-    document.write("</br>")
-    if (index%5==0) {
-        document.write("<hr> ")        
-    }
-    
+numero=parseInt(prompt("Ingrese un numero menor que 50"));
+numero1=numero;
+if (numero<=50) {
+    for (let index = 0; index< numero; index++) {
+        for (let index1 = 0; index1 < numero1; index1++) {
+            document.write(numero-index);
+        }
+        numero1=numero1-1
+        document.write("</br>");
+    }    
 }
