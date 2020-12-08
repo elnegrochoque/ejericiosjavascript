@@ -13,7 +13,10 @@ while (bandera==false&&posicion<cadena.length) {
     cadena.charAt(posicion)=="o"||
     cadena.charAt(posicion)=="u") {
     bandera=true;
+    document.write("La posición es "+(posicion+1));
     }
     posicion++;
 } 
-document.write("La posición es "+(posicion));
+if (bandera==false) {
+    document.write("El texto no tiene vocales");
+}
